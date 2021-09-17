@@ -17,7 +17,7 @@ public class RemoveBullet : MonoBehaviour
 
             // 스파크 이펙트 생성
             GameObject spark = Instantiate(sparkEffect, hitPoint, rot);
-            //Destroy(spark, 0.4f);
+            Destroy(spark, 0.4f);
 
             Destroy(coll.gameObject);
         }
